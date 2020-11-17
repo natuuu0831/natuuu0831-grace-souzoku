@@ -297,7 +297,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .footer .inner {
     max-width: 95%;
   }
@@ -308,7 +308,7 @@ br.sp {
   margin-right: 9rem;
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .footer__left {
     width: 20rem;
     margin-right: 4vw;
@@ -394,7 +394,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .footer .inner02 {
     max-width: 95%;
   }
@@ -412,11 +412,7 @@ br.sp {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  position: static;
   padding: 1rem 0;
 }
 
@@ -427,6 +423,11 @@ br.sp {
 @media (max-width: 768px) {
   .header {
     padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -660,7 +661,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .about .inner {
     max-width: 95%;
   }
@@ -718,7 +719,7 @@ br.sp {
   margin-bottom: 2.4rem;
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .about__boxWrap {
     flex-flow: column;
   }
@@ -745,7 +746,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .about__boxWrap__boxLeft {
     margin-right: auto;
     margin-left: auto;
@@ -811,7 +812,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .about__boxWrap__boxRight {
     width: 72.5rem;
     margin-right: auto;
@@ -819,13 +820,13 @@ br.sp {
   }
 }
 
-@media (max-width: 0) and (max-width: 768px) {
+@media (max-width: 1100px) and (max-width: 768px) {
   .about__boxWrap__boxRight {
     width: 100%;
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .about__boxWrap__boxRight__list {
     display: flex;
     justify-content: space-between;
@@ -1070,7 +1071,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .flow .inner {
     max-width: 95%;
   }
@@ -1218,7 +1219,7 @@ br.sp {
   background: url(../img/top/flow-arrow.svg) 0 0 no-repeat;
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .flow__list__item::after {
     background-size: 80%;
   }
@@ -1231,7 +1232,13 @@ br.sp {
 }
 
 .main {
-  background: url(../img/top/mv-bg.gif) 0 0 no-repeat;
+  background: url(../img/top/mv-bg.gif) 0 0/cover no-repeat;
+}
+
+@media (min-width: 1700px) {
+  .main {
+    height: 72rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1259,7 +1266,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .main .inner {
     background-size: 40vw;
   }
@@ -1448,7 +1455,7 @@ br.sp {
   margin-right: 3rem;
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .news__right__list__item dl dt {
     width: 30%;
   }
@@ -1496,7 +1503,7 @@ br.sp {
 }
 
 .strengths {
-  background: url(../img/top/wave-top.jpg) -4rem top no-repeat, url(../img/top/wave-bottom.jpg) 0 bottom no-repeat #fdeeee;
+  background: url(../img/top/wave-top.jpg) -4rem top repeat-x, url(../img/top/wave-bottom.jpg) 0 bottom repeat-x #fdeeee;
   padding: 10.9rem 0 12rem;
 }
 
@@ -1682,7 +1689,7 @@ br.sp {
   }
 }
 
-@media (max-width: 0) {
+@media (max-width: 1100px) {
   .trouble .inner {
     max-width: 95%;
   }
