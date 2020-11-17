@@ -2,7 +2,6 @@
 img {
     max-width: 100%;
   }
-  
 html {
 font-size: 62.5%;
 }
@@ -15,11 +14,128 @@ display: none !important;
     box-sizing: border-box;
 }
 
+/* ▼▼▼ カラーアセット ▼▼▼ */
+.pink {
+    color: #f57679;
+  }
+.red {
+    color: #bb284d;
+  }
+.yellow {
+color: #FFFF99;
+}
+/* ▲▲▲ カラーアセット ▲▲▲ */
+
+/* ▼▼▼ h2ピンクドット用 ▼▼▼ */
+h2.header-dotted {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-bottom: 7.6rem;
+}
+h2.header-dotted::after {
+    position: absolute;
+    content: '';
+    width: 6rem;
+    height: .8rem;
+    right: 0;
+    left: 0;
+    bottom: -3.5rem;
+    margin: auto;
+    background: url(../img/common/dot.svg) 0 0 no-repeat;
+}
+/* ▲▲▲ h2ピンクドット用 ▲▲▲ */
+
+/* ▼▼▼ ピンクボタン用 ▼▼▼ */
+.btn_pink{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 4rem;
+    color: #fff;
+    width: 25rem;
+    margin: auto;
+    background-color: #f57679;
+}
+/* ▲▲▲ ピンクボタン用 ▲▲▲ */
+
+/* ▼▼▼ common問合せ用 ▼▼▼ */
+.contact_common {
+    background: url(../img/top/contact-bg.jpg) 0 0/cover no-repeat;
+    padding: 8rem;
+  }
+  .contact_common__head {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .contact_common__head .yellow {
+    color: #FFFF99;
+  }
+  
+  .contact_common__lead {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #fff;
+  }
+  .contact_common__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .contact_common__list__item {
+    text-align: center;
+    width: 29rem;
+    margin-right: 2.9rem;
+  }
+  .contact_common__list__item:last-of-type {
+    margin-right: 0;
+  }
+  .contact_common__list__item--first {
+    border: 1px solid;
+    border-radius: 4rem;
+    padding: 1rem 0;
+    line-height: 1.2;
+  }
+  
+  .contact_common__list__item--first .tel__number {
+    font-size: 2.8rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 2rem;
+    background: url(../img/top/contact-tel.svg) 0 55% no-repeat;
+  }
+  .contact_common__list__item--first .tel__info {
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+  .contact_common__list__item--second {
+    border-radius: 4rem;
+    padding: 2.7rem 0;
+    line-height: 1.2;
+    background-color: #bb284d;
+    font-size: 2rem;
+  }
+
+.contact_common__list__item--second a {
+    padding-left: 3rem;
+    background: url(../img/top/contact-mail.svg) 0% 55% no-repeat;
+  }
+  
+  /* ▲▲▲ common問合せ用 ▲▲▲ */
+
 @media (max-width: 1100px) {
  .inner {
       max-width: 95%;
     }
   }
+
+
   @media (max-width: 768px) {
     .pc {
       display: none !important;
@@ -30,5 +146,55 @@ display: none !important;
     .inner {
         max-width: 95%;
     }
+    /* ▼▼▼ h2ピンクドット用 ▼▼▼ */
+    h2.header-dotted {
+        font-size: 6.66vw;
+    }
+    h2.header-dotted::after {
+        width: 7rem;
+    }
+    /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
+
+    /* ▼▼▼ ピンクボタン用 ▼▼▼ */
+    .btn_pink{
+        font-size: 4vw;
+        width: 66.68vw;
+        padding: 4.53vw 0;
+    }
+    /* ▲▲▲ ピンクボタン用 ▲▲▲ */
+
+    /* ▼▼▼ common問合せ用 ▼▼▼ */
+    .contact_common {
+        padding: 6rem 0;
+        background: url(../img/top/contact-bg-sp.jpg) 0 0/cover no-repeat;
+      }
+      .contact_common__lead {
+        text-align: left;
+        font-size: 4.26vw;
+        line-height: 1.8;
+      }
+      .contact_common__list {
+        display: block;
+      }
+      .contact_common__list__item {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+      }
+      .contact_common__list__item:last-of-type {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+      .contact_common__list__item--first .tel__number {
+        font-size: 5.33vw;
+      }
+      .contact_common__list__item--first .tel__info {
+        font-size: 4.26vw;
+      }
+      .contact_common__list__item--second {
+        padding: 2rem 0;
+      }
+    /* ▲▲▲ common問合せ用 ▲▲▲ */
   }
 

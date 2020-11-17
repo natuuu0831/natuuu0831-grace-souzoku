@@ -210,20 +210,17 @@ input[type="date"]::-webkit-inner-spin-button {
 input[type="date"]::-webkit-clear-button {
   -webkit-appearance: none;
 }
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333333;
+    overflow-wrap: break-word;
+    font-family: source-han-sans-japanese, sans-serif, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "メイリオ", sans-serif;
+  }
 @media (max-width: 768px) {
     html {
         font-size: 2.6vw;
       }
-    }
-    
-    body {
-      font-size: 1.6rem;
-      line-height: 1.6;
-      font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "メイリオ", sans-serif;
-      color: #333333;
-      overflow-wrap: break-word;
-      font-family: source-han-sans-japanese, sans-serif;
-    }
     
     a {
       transition: .5s;
