@@ -13,7 +13,9 @@ display: none !important;
     max-width: 1100px;
     box-sizing: border-box;
 }
-
+a.disabled{
+    pointer-events: none;
+}
 /* ▼▼▼ カラーアセット ▼▼▼ */
 .pink {
     color: #f57679;
@@ -24,7 +26,12 @@ display: none !important;
 .yellow {
 color: #FFFF99;
 }
+.highLight {
+    background: linear-gradient(transparent 70%, #FFEFA9 70%);
+  }
 /* ▲▲▲ カラーアセット ▲▲▲ */
+
+
 
 /* ▼▼▼ h2ピンクドット用 ▼▼▼ */
 h2.header-dotted {
@@ -44,6 +51,9 @@ h2.header-dotted::after {
     bottom: -3.5rem;
     margin: auto;
     background: url(../img/common/dot.svg) 0 0 no-repeat;
+}
+.lead{
+    margin-bottom: 4rem;
 }
 /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
 
@@ -129,6 +139,66 @@ h2.header-dotted::after {
   
   /* ▲▲▲ common問合せ用 ▲▲▲ */
 
+  /* ▼▼▼ headBlock ▼▼▼ */
+.headBlock {
+    background: url(../img/common/headBlock-bg.gif) 0 0 /cover no-repeat;
+    margin-bottom: 1rem;
+  }
+.headBlock h1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 6.5rem 0;
+  }
+/* ▲▲▲ headBlock ▲▲▲ */
+
+  /* ▼▼▼ breadcrumb ▼▼▼ */
+  .breadcrumb {
+    font-size: 1.4rem;
+    margin-bottom: 8rem;
+  }
+  .breadcrumb ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .breadcrumb ul li {
+   margin-right: 3.2rem;
+   position: relative;
+  }
+  .breadcrumb ul li:last-of-type::after {
+    content: none;
+   }
+  .breadcrumb ul li::after {
+   content: '';
+   position: absolute;
+   width: .8rem;
+   height: 1.3rem;
+   right: -2rem;
+   top: 0.5rem;
+   background: url(../img/common/arrow-black.svg) 0 0 no-repeat;
+  }
+
+/* ▲▲▲ breadcrumb ▲▲▲ */
+
+/* ▼▼▼ consultation_common ▼▼▼ */
+.consultation_common{
+    background-color: #F5F5F5;
+    padding: 6rem 0;
+}
+.consultation_common .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consultation_common p{
+    margin-right: 2rem;
+}
+.consultation_common .btn_pink{
+    margin: 0;
+}
+/* ▲▲▲ consultation_common ▲▲▲ */
+
+
 @media (max-width: 1100px) {
  .inner {
       max-width: 95%;
@@ -153,6 +223,10 @@ h2.header-dotted::after {
     h2.header-dotted::after {
         width: 7rem;
     }
+    .lead {
+        font-size: 4.26vw;
+        line-height: 1.8;
+    }
     /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
 
     /* ▼▼▼ ピンクボタン用 ▼▼▼ */
@@ -162,6 +236,17 @@ h2.header-dotted::after {
         padding: 4.53vw 0;
     }
     /* ▲▲▲ ピンクボタン用 ▲▲▲ */
+
+      /* ▼▼▼ headBlock ▼▼▼ */
+    .headBlock {
+        background: url(../img/common/headBlock-bg.gif) 0 0 no-repeat;
+        background-size: cover;
+    }
+    .headBlock h1{
+        font-size: 3.5rem;
+        padding: 10rem 0 5rem;
+    }
+/* ▲▲▲ headBlock ▲▲▲ */
 
     /* ▼▼▼ common問合せ用 ▼▼▼ */
     .contact_common {
@@ -196,5 +281,30 @@ h2.header-dotted::after {
         padding: 2rem 0;
       }
     /* ▲▲▲ common問合せ用 ▲▲▲ */
+
+/* ▼▼▼ breadcrumb ▼▼▼ */
+.breadcrumb {
+    margin-bottom: 5rem;
+  }
+/* ▲▲▲ breadcrumb ▲▲▲ */
+
+/* ▼▼▼ consultation_common ▼▼▼ */
+.consultation_common{
+    padding: 3rem 0;
+}
+.consultation_common .inner{
+    display: block;
+    text-align: center;
+}
+.consultation_common p{
+    margin-bottom: 2rem;
+    margin-right: auto;
+    font-size: 4.5vw;
+}
+.consultation_common .btn_pink{
+    margin: 0 auto;
+}
+/* ▲▲▲ consultation_common ▲▲▲ */
+
   }
 
