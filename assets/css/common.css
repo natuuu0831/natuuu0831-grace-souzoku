@@ -22,6 +22,7 @@ a.disabled{
   }
 .red {
     color: #bb284d;
+    font-weight: bold;
   }
 .yellow {
 color: #FFFF99;
