@@ -96,6 +96,21 @@
 .about__boxWrap a {
   font-size: 3rem;
   color: #fff;
+  position: relative;
+}
+.about__boxWrap a::after{
+  content: "";
+    vertical-align: middle;
+    /* position: absolute; */
+    top: 40%;
+    left: 13px;
+    margin-top: -0.15em;
+    width: 11px;
+    height: 11px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    display: inline-block;
 }
 
 .about__boxWrap__boxLeft {
@@ -144,6 +159,7 @@
   display: block;
   padding: 10.6rem 0;
   margin-bottom: 1.3rem;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -215,6 +231,7 @@
   display: block;
   padding: 4.4rem 0;
   margin-bottom: 1.3rem;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -595,6 +612,8 @@
 
 .main {
   background: url(../img/top/mv-bg.gif) 0 0/cover no-repeat;
+  margin-top: -120px;
+  background-position-y: -160px;
 }
 
 @media (min-width: 1700px) {
@@ -607,6 +626,8 @@
   .main {
     padding-top: 4rem;
     background: url(../img/top/mv-bg-sp.gif) 0 0/cover no-repeat;
+    margin-top: 0;  
+    background-position-y: -14vw;
   }
 }
 
@@ -618,8 +639,8 @@
   margin: 0 auto;
   max-width: 1100px;
   box-sizing: border-box;
-  padding: 20rem 5rem 5rem;
-  background: url(../img/top/mv-familiy.png) 600px bottom no-repeat;
+  padding: 20rem 5rem 15rem;
+  background: url(../img/top/mv-familiy.png) 600px 140px no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -650,7 +671,7 @@
 
 @media (max-width: 768px) {
   .main__head {
-    font-size: 7.46vw;
+    font-size: 8.4vw;
     text-align: center;
   }
 }
