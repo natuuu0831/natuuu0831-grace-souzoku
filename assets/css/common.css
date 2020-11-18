@@ -141,7 +141,7 @@ h2.header-dotted::after {
 
   /* ▼▼▼ headBlock ▼▼▼ */
 .headBlock {
-    background: url(../img/common/headBlock-bg.gif) 0 0 no-repeat;
+    background: url(../img/common/headBlock-bg.gif) 0 0 /cover no-repeat;
     margin-bottom: 1rem;
   }
 .headBlock h1{
