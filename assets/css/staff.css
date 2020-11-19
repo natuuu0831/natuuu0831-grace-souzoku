@@ -1,0 +1,150 @@
+@charset "UTF-8";
+#staff{
+}
+.greeting {
+    margin-bottom: 8rem;
+}
+.greeting .inner {
+    padding: 0 5rem;
+    display: flex;
+    align-items: flex-start
+}
+.greeting .txtArea {
+    width: 65%;
+    margin-right: 5%;
+}
+.greeting .txtArea p{
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+.greeting .imgArea img{
+    margin-bottom: 1.7rem;
+}
+.greeting .imgArea dl{
+    text-align: center;
+}
+.greeting .imgArea dd{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.intro {
+    background-color: #FDEEEE;
+    padding: 8rem 0;
+}
+.intro .inner{
+    padding: 0 5rem;
+}
+.intro .lead{
+    text-align: center;
+    margin-bottom: 5.7rem;
+}
+.intro li {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 4.5rem;
+    padding-bottom:4.5rem;
+}
+.intro li:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.intro li figure {
+    display: flex;
+    align-items: flex-start;
+}
+.intro li img {
+   width: 24%;
+   margin-right: 4%;
+}
+.intro li .ttl {
+    margin-bottom: 2.2rem;
+}
+.intro li .ttl dt{
+   font-weight: bold;
+}
+.intro li .ttl dd{
+   font-weight: bold;
+   font-size: 2.5rem;
+}
+.intro li table{
+   width: 100%;
+}
+.intro li table tr{
+    display: flex;
+   margin-bottom: 2.1rem;
+}
+.intro li table tr:last-of-type{
+   margin-bottom: 0;
+}
+.intro li table th{
+   width: 17%;
+   line-height: 1.8;
+}
+.intro li table td{
+  line-height: 1.8;
+  flex: 1;
+}
+.intro li table .history{
+  display: flex;
+}
+.intro li table .history dt {
+  width: 17%;
+}
+#staff .consultation_common {
+    background-color: #fff;
+}
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 768px) {
+    .greeting {
+        margin-bottom: 5rem;
+    }
+    .greeting .inner {
+        padding: 0;
+        display: block;
+    }
+    .greeting .txtArea {
+        width: 100%;
+        margin-bottom: 2.3rem;
+    }
+    .greeting figure {
+        text-align: center;
+    }
+    .intro {
+        padding: 5rem 0;
+    }
+    .intro .inner {
+        padding: 0;
+    }
+    .intro h2.header-dotted {
+        margin-bottom: 6rem;
+    }
+    .intro .lead {
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+    .intro li figure {
+        display: block;
+        text-align: center;
+    }
+    .intro li img {
+        width: 80%;
+        margin: 0 auto 1rem;
+    }
+    .intro li table td {
+        text-align: left;
+    }
+    .intro li table th {
+        margin-right: 3rem;
+        width: 18%;
+    }
+    .intro li table .history dt {
+        width: 35%;
+    }
+    .intro li table .history dd {
+        flex: 1;
+    }
+}
