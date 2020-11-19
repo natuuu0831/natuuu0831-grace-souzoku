@@ -6,7 +6,17 @@ $(window).on("scroll", function () {
     $("#header").css("background-color", "#fff");
   }
 });
-
+$(function () {
+  $('a[href^="#"]').click(function () {
+    var ww = $(window).width();
+    var headerHight = ww >= 767 ? 0 : $(".header").height();
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top - headerHight;
+    $("html, body").animate({ scrollTop: position }, 550, "swing");
+    return false;
+  });
+});
 $(function () {
   var ua = navigator.userAgent;
   if (
@@ -23,25 +33,23 @@ $(function () {
 
 $(function () {
   var pagetop = $("#pageTopButton");
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 300) {
-            pagetop.fadeIn();
-        } else {
-            pagetop.fadeOut();
-        }
-    });
-    pagetop.click(function() {
-        $("body, html").animate({ scrollTop: 0 }, 500);
-        return false;
-    });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      pagetop.fadeIn();
+    } else {
+      pagetop.fadeOut();
+    }
+  });
+  pagetop.click(function () {
+    $("body, html").animate({ scrollTop: 0 }, 500);
+    return false;
+  });
 
-    //index用footerコンテンツ開閉
-    $(".link-list__item").click(function() {
-        $(this)
-            .find(".slide-box")
-            .slideToggle(300);
-        $(this).toggleClass("active");
-    });
+  //index用footerコンテンツ開閉
+  $(".link-list__item").click(function () {
+    $(this).find(".slide-box").slideToggle(300);
+    $(this).toggleClass("active");
+  });
 });
 
 //ハンバーガーメニュー
@@ -80,15 +88,16 @@ $(window).on("load resize", function () {
     });
   } else {
     //pc
-
     $(function () {
       //nav
       target.hover(
         function () {
-        $(this).find("dd").css("display", "block");
-      }, function() {
-        $(this).find("dd").css("display", "none");
-      });
+          $(this).find("dd").css("display", "block");
+        },
+        function () {
+          $(this).find("dd").css("display", "none");
+        }
+      );
       target_single.hover(function () {
         target.find("dd").css("display", "none");
       });
