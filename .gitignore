@@ -1,0 +1,46 @@
+### https://raw.github.com/github/gitignore/ec246076319913acee4aaeef8caf86b78e586e7a/Global/macOS.gitignore
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.htaccess
+readme.html
+license.txt
+xmlrpc.php
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#wp
+wp-admin
+wp-includes
+wp-includes
+wp-content/plugins
+**/wp-content/languages
+**/wp-content/uploads
+**/wp-content/upgrade
+**/wp-content/plugins/akismet
+**/wp-content/themes/twentynineteen
+**/wp-content/themes/twentyseventeen
+**/wp-content/themes/twentytwenty
+!**/wp-content/themes/masaimedicalapi
+
+.env
+docker-compose.yml
