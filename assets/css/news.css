@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.news{}
+.list {
+    margin-bottom: 8rem;
+}
+.list .inner {
+   display: flex;
+   align-items: flex-start;
+}
+.newsArea {
+   margin-right: 8rem;
+   width: 74%;
+}
+.ttlList {
+    margin-bottom: 5rem;
+}
+.ttlList li {
+    border: dashed #999999;
+    border-width: 1px 0 0;
+    padding: 1.7rem 0;
+}
+.ttlList li:last-of-type {
+    border-bottom: 1px dashed #999999;
+}
+.ttlList dt {
+    margin-bottom: 1rem;
+}
+.ttlList dd {
+    font-weight: bold;
+}
+.ttlList .date{
+    display: inline-block;
+    margin-right: 1.3rem;
+}
+.ttlList .tag{
+    font-size: 1.2rem;
+    border: 1px solid;
+    display: inline-block;
+    padding: .5rem 4rem;
+}
+.pager {
+    display: flex;
+    justify-content: center;
+}
+.pager li{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.6rem;
+    border: 1px solid #F57679;
+    color: #F57679;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pager li:last-of-type{
+    margin-right: 0;
+}
+.pager li.active {
+    color: #fff;
+    background-color: #F57679;
+}
+.side {
+    margin-top: -1rem;
+}
+.side dl {
+    margin-bottom: 2.1rem;
+}
+.side dl dt{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.side dl li{
+    text-indent: -1.5rem;
+    padding-left: 4rem;
+}
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 768px) {
+    .list .inner {
+        display: block;
+     }    
+     .newsArea {
+         width: 100%;
+         margin-right: 0;
+     }
+     .ttlList {
+         margin-bottom: 4rem;
+     }
+     .pager {
+         margin-bottom: 4.8rem;
+     }
+     .pager li {
+         width: 3rem;
+         height: 3rem;
+         margin-right:1rem ;
+     }
+}
