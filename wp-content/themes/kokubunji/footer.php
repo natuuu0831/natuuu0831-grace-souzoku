@@ -4,7 +4,7 @@
         <div class="footer__left">
           <img
             class="footer__left__logo"
-            src="assets/img/footer/logo.svg"
+            src="/assets/img/footer/logo.svg"
             alt="税理士事務所グレイス"
           />
           <p class="footer__left__address">
@@ -20,7 +20,7 @@
               <a href="#?">ホーム</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">私たちの強み</a>
+              <a href="strengths/">私たちの強み</a>
             </li>
           </ul>
           <ul class="footer__right__list footer__right__list--second">

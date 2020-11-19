@@ -31,7 +31,7 @@ function register_style()
   wp_register_style('header', '/assets/css/header.css');
   wp_register_style('footer', '/assets/css/footer.css');
   wp_register_style('top', '/assets/css/index.css');
-  wp_register_style('test', '/assets/css/test.css');
+  wp_register_style('strengths', '/assets/css/strengths.css');
 }
 function add_stylesheet()
 {
@@ -44,7 +44,9 @@ wp_enqueue_style('footer');
 
   if (is_front_page()) {
         wp_enqueue_style('top');
-      }
+      } elseif (is_page('strengths')) {
+        wp_enqueue_style('strengths');
+    }
 //   if (is_front_page()) {
 //     wp_enqueue_style('top');
 //   } elseif (is_singular('test')) {
