@@ -65,7 +65,7 @@ $(window).on("load resize", function () {
   var winW = $(window).width();
   var devW = 767;
   //nav
-  var target = $(".js-trigger-nav");
+  var target = $(".js-trigger-nav").find(".dummyBox");
   var target_single = $(".js-trigger-nav-single");
 
   if (winW <= devW) {
@@ -74,8 +74,8 @@ $(window).on("load resize", function () {
     $(function () {
       //nav
       target.on("click", function () {
-        $(this).find(".dummyBox").toggleClass("switch");
-        $(this).find("dd").toggleClass("active");
+        $(this).toggleClass("switch");
+        $(this).siblings("dd").toggleClass("active");
       });
     });
   } else {
