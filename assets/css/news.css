@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
 }
-.pager li{
+.pager  .page-numbers{
     width: 4rem;
     height: 4rem;
     margin-right: 1.6rem;
@@ -52,13 +52,11 @@
     justify-content: center;
     align-items: center;
 }
-.pager li:last-of-type{
-    margin-right: 0;
-}
-.pager li.active {
+.pager .page-numbers.current{
     color: #fff;
     background-color: #F57679;
 }
+
 .side {
     margin-top: -1rem;
 }

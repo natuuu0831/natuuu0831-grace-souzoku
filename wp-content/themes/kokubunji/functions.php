@@ -11,17 +11,16 @@ function add_jquery_scripts()
 function register_script()
 {
   wp_register_script('custom', '/assets/js/custom.js');
+  wp_register_script('faq', '/assets/js/faq.js');
 }
 function add_script()
 {
   register_script();
   wp_enqueue_script('custom');
 
-//   if (is_front_page()) {
-//     wp_enqueue_script('top');
-//   } else if (is_page('faq')) {
-//     wp_enqueue_script('faq');
-//   }
+  if (is_page('faq')) {
+    wp_enqueue_script('faq');
+  }
 }
 //read CSS
 function register_style()
@@ -32,6 +31,11 @@ function register_style()
   wp_register_style('footer', '/assets/css/footer.css');
   wp_register_style('top', '/assets/css/index.css');
   wp_register_style('strengths', '/assets/css/strengths.css');
+  wp_register_style('office', '/assets/css/office.css');
+  wp_register_style('staff', '/assets/css/staff.css');
+  wp_register_style('price', '/assets/css/price.css');
+  wp_register_style('faq', '/assets/css/faq.css');
+  wp_register_style('news', '/assets/css/news.css');
 }
 function add_stylesheet()
 {
@@ -46,6 +50,18 @@ wp_enqueue_style('footer');
         wp_enqueue_style('top');
       } elseif (is_page('strengths')) {
         wp_enqueue_style('strengths');
+    } elseif (is_page('office')) {
+        wp_enqueue_style('office');
+    } elseif (is_page('staff')) {
+        wp_enqueue_style('staff');
+    } elseif (is_page('price')) {
+        wp_enqueue_style('price');
+    } elseif (is_page('faq')) {
+        wp_enqueue_style('faq');
+    } elseif (is_archive('news')) {
+        wp_enqueue_style('news');
+    } elseif (is_singular('news')) {
+        wp_enqueue_style('news');
     }
 //   if (is_front_page()) {
 //     wp_enqueue_style('top');
@@ -93,6 +109,7 @@ register_taxonomy(
   ]
 );
 
+// 非表示
 add_action( 'admin_menu', 'remove_menus' );
 function remove_menus(){
     remove_menu_page( 'edit.php' ); //投稿メニュー
