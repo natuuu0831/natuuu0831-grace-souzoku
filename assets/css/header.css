@@ -183,8 +183,8 @@
       .header .dummyBox.switch {
         display: block;
         background: url(../img/common/minus.svg) 50% 50% no-repeat #f57679;
-        width: 5rem;
-        height: 5.1rem;
+        width: 15vw;
+        height: 15vw;
         position: absolute;
         right: 0;
         top: 0;
