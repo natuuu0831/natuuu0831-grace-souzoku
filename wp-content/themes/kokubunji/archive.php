@@ -23,14 +23,8 @@
         <div class="inner">
             <div class="newsArea">
                 <ul class="ttlList">
-                <?php
-                    $newslist = get_posts(array(
-                        'posts_per_page' => 3,
-                        'post_type' => 'news'
-                    ));
-                    foreach ($newslist as $post) :
-                        setup_postdata($post);
-                ?>
+                    <?php if ( have_posts() ) : ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
                     <li>
                         <dl>
                             <dt>
@@ -48,7 +42,8 @@
                             <dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
                         </dl>
                     </li>
-                <?php endforeach; ?>
+                    <?php endwhile;?>
+                    <?php endif;?>
                 </ul>
 
                 <?php include('news-paginate.php'); ?>

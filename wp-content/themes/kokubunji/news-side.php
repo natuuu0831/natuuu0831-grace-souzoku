@@ -33,17 +33,16 @@
         <dt>アーカイブス</dt>
  
         <dd>
-            <!-- <ul>
+             <ul>
                  <?php
                     $args = array(
                         'type' => 'monthly',
                         'post_type' => 'news', 
                     );
-               //     wp_get_archives($args);
+                   wp_get_archives($args);
                 ?>
-            </ul> -->
-            <?php wp_get_archives( $args ); ?>
-            <!-- <ul><?php //wp_get_archives('type=monthly&post_type=news&show_post_count=0&limit=12'); ?></ul> -->
+            </ul> 
+          
         </dd>
     </dl>
 </div>
