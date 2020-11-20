@@ -5,6 +5,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin-bottom: 4rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.souzokuMenuList__item:hover{
+  opacity: .7;
 }
 .souzokuMenuList__item .radiusImgBox {
   border-bottom-right-radius: 0;
@@ -18,8 +23,9 @@
 }
 .souzokuMenuList__item dd {
   padding: 0 20px;
+  height: 10rem;
 }
-.souzokuMenuList__item a {
+.souzokuMenuList__item .button {
   display: block;
   text-align: center;
   font-size: 1.4rem;
@@ -301,6 +307,9 @@
   .seizenDetail__item dl {
     width: 100%;
     display: block;
+  }
+  .souzokuMenuList__item dd {
+    height: auto;
   }
   .seizenDetail__item dl div {
     width: 100%;
