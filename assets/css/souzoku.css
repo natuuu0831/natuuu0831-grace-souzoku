@@ -1,0 +1,350 @@
+@charset "UTF-8";
+.souzokuMenuList__item {
+  width: 31%;
+  padding-bottom: 70px;
+}
+.souzokuMenuList__item dt {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 20px 0;
+}
+.souzokuMenuList__item dd {
+  padding: 0 20px;
+}
+.souzokuMenuList__item a {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  border-radius: 4rem;
+  color: #fff;
+  width: 18rem;
+  margin: 20px auto 0;
+  background-color: #f57679;
+}
+
+#sec1 img {
+  width: 44%;
+  margin-left: 60px;
+}
+#sec2 h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+.ancerLinkListWrap {
+  background: #fdeeee;
+  padding: 7rem 0 8rem;
+  margin-top: 4rem;
+}
+.ancerLinkList.flexWrap {
+  justify-content: center;
+}
+
+.ancerLinkList__item {
+  border: 5px solid #f2bcbd;
+  border-radius: 10px;
+  width: 210px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  margin-right: 1.1%;
+  box-sizing: border-box;
+}
+
+.ancerLinkList__item:last-child {
+  margin-right: 0;
+}
+.ancerLinkList__item a {
+  display: block;
+  padding: 5.7rem 0 2.5rem;
+}
+.iconWrap {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ancerLinkList__item .number {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: #f57679;
+  border-radius: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+.ancerLinkList__item .title {
+  display: block;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+#seizen #sec3 {
+  margin-top: 3rem;
+}
+.seizenDetail__item {
+  border-bottom: 1px solid #cccccc;
+  align-items: flex-start;
+  padding: 4rem 0 4rem 3rem;
+}
+.seizenDetail__item .number {
+  font-size: 5rem;
+  color: #f57679;
+  border-bottom: 1px solid #f57679;
+  display: inline-block;
+  line-height: 1;
+  padding-bottom: 0.6rem;
+  font-weight: bold;
+}
+.seizenDetail__item dl {
+  width: 90%;
+  align-items: self-start;
+}
+.seizenDetail__item dl div {
+  width: 56%;
+}
+.seizenDetail__item dt {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.seizenDetail__item dd {
+  line-height: 1.7;
+}
+.seizenDetail__item img {
+  width: 39%;
+  margin-left: 4rem;
+  margin-top: 0.3rem;
+}
+.buttomText {
+  font-weight: bold;
+  text-align: center;
+  margin: 6rem 0;
+}
+#buttomLinkWrap {
+  background: #f5f5f5;
+  padding: 5rem 0;
+}
+#buttomLinkWrap p {
+  text-align: center;
+}
+#buttomLinkWrap .button {
+  background: #f57679;
+  display: inline-block;
+  width: 25rem;
+  padding: 1rem 0;
+  color: #fff;
+  border-radius: 4rem;
+  margin-left: 2rem;
+}
+
+#flowSection .flowWrap {
+  border: 5px solid #ebebeb;
+}
+.flowList.inner {
+  border: 5px solid #ebebeb;
+  padding: 7rem 2rem 7rem 10rem;
+  box-sizing: border-box;
+  margin: 7rem auto 8rem;
+}
+.flowList__lineBox {
+  border-left: 6px solid #cccccc;
+}
+
+.flowList__Item {
+  transform: translateX(-4.5rem);
+}
+.flowList__Item h3 {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #000;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.flowList__Item dl {
+  margin-left: 7.5rem;
+  padding-bottom: 4rem;
+}
+.flowList__Item dt {
+  margin: 2.5rem 0 1.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+}
+.flowList__Item dt.comp {
+  color: #f57679;
+}
+.flowList__Item dt::before {
+  content: "";
+  border-radius: 50%;
+  border: 5px solid #000;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 1rem;
+  left: -4.3rem;
+}
+.flowList__Item .label {
+  background: #ff9900;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  margin-left: 0.7rem;
+}
+
+.flowList__Item.item01 h3 {
+  background: #59a5bb;
+}
+
+.flowList__Item.item02 h3 {
+  background: #658dc4;
+}
+.flowList__Item.item02 dt::before {
+  border: 5px solid #658dc4;
+}
+
+.flowList__Item.item03 h3 {
+  background: #8e7fb8;
+}
+.flowList__Item.item03 dt::before {
+  border: 5px solid #8e7fb8;
+}
+
+.flowList__Item.item04 h3 {
+  background: #f87fb0;
+}
+.flowList__Item.item04 dt::before {
+  border: 5px solid #f87fb0;
+}
+
+.flowList__Item.item05 h3 {
+  background: #f57679;
+}
+.flowList__Item.item05 dt::before {
+  border: 5px solid #f57679;
+}
+.flowList__Item.item05 dl {
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 767px) {
+  .souzokuMenuList__item {
+    width: 48%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 472px) {
+  .souzokuMenuList__item {
+    width: 100%;
+    margin-bottom: 10vw;
+  }
+  #sec1 .flex {
+    display: block;
+  }
+  #sec1 img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .ancerLinkList__item {
+    border: 5px solid #f2bcbd;
+    width: 47%;
+    margin-bottom: 8vw;
+  }
+  .ancerLinkList__item .title {
+    padding: 0 2vw;
+  }
+  .ancerLinkList.flexWrap {
+    justify-content: space-between;
+  }
+  #sec2 h3 {
+    font-size: 3rem;
+  }
+  #sec3 {
+    margin-top: 1.5rem;
+  }
+  .ancerLinkListWrap {
+    padding: 4rem 0 2rem;
+  }
+  .seizenDetail__item .number {
+    font-size: 4.7rem;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-bottom: 3rem;
+  }
+  .seizenDetail__item dl {
+    width: 100%;
+    display: block;
+  }
+  .seizenDetail__item dl div {
+    width: 100%;
+  }
+  .seizenDetail__item {
+    padding: 3rem 0;
+  }
+  .seizenDetail__item dt {
+    font-size: 2.3rem;
+  }
+  .seizenDetail__item img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .buttomText {
+    margin: 4rem 0;
+    text-align: left;
+  }
+  #buttomLinkWrap .button {
+    display: block;
+    margin: 2vw auto 0;
+  }
+  .flowList.inner {
+    border: none;
+    padding: 0rem 0rem 5rem 5.2vw;
+    box-sizing: border-box;
+    margin: 4.5rem auto 0rem;
+  }
+  .flowList__Item h3 {
+    width: 79.5vw;
+    font-size: 2rem;
+  }
+  .flowList__Item dl {
+    margin-left: 13vw;
+    padding-bottom: 3rem;
+  }
+  .flowList__Item {
+    transform: translateX(-7vw);
+  }
+  .flowList__Item dt::before {
+    left: -9.9vw;
+    width: 6vw;
+    height: 6vw;
+  }
+  .flowList__Item dt {
+    margin: 4.5vw 0 2vw;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+}

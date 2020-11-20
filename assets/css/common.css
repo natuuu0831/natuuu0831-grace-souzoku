@@ -45,6 +45,9 @@ color: #FFFF99;
     background: linear-gradient(transparent 70%, #FFEFA9 70%);
     font-weight: bold;
   }
+.blue {
+  color: #3366CC;
+}
 /* ▲▲▲ カラーアセット ▲▲▲ */
 
 /* ▼▼▼ 気楽にflex ▼▼▼ */
