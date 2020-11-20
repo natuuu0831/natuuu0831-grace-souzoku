@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .souzokuMenuList__item {
-  width: 31%;
+  width: 31.9%;
   padding-bottom: 3.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin-bottom: 4rem;
 }
-.souzokuMenuList__item .radiusImgBox{
+.souzokuMenuList__item .radiusImgBox {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -351,5 +351,5 @@
     font-size: 2rem;
     font-weight: bold;
     position: relative;
-}
+  }
 }
