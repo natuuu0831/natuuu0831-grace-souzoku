@@ -11,15 +11,14 @@
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/souzoku.css" />
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/common.css" />
-    <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/policy.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/simulator.js"></script>
+    <script src="assets/js/custom.js"></script>
     <script>
       (function (d) {
         var config = {
@@ -51,24 +50,27 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
+    <script>
+      $(function () {
+        var ua = navigator.userAgent;
+        if (
+          ua.indexOf("iPhone") > 0 ||
+          (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
+        ) {
+          $("head").prepend(
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+          );
+        } else {
+          $("head").prepend('<meta name="viewport" content="width=1000">');
+        }
+      });
+    </script>
   </head>
 
   <body>
     <header id="header" class="header">
       <div class="inner pc">
-        <div class="headerlogoWrap">
-          <a href="/">
-            <p class="headerlogoWrap__lead">
-              国分寺・小平・小金井・府中の相続のことなら
-            </p>
-            <img
-              src="assets/img/common/header-logo.svg"
-              class="headerlogoWrap__logo"
-              alt=""
-            />
-            <p class="headerlogoWrap__label">運営：税理士事務所グレイス</p>
-          </a>
-        </div>
+        <img src="assets/img/common/header-logo.svg" class="logo" alt="" />
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list__item js-trigger-nav-single">
@@ -110,24 +112,17 @@
                 <dt><a href="#">よくある質問</a></dt>
               </dl>
             </li>
-            <li class="nav__list__item nav__list__item--contact">
-              <a href="#">お問い合わせ</a>
+            <li class="nav__list__item nav__list__item--contact_common">
+              <dl>
+                <dt><a href="#">お問い合わせ</a></dt>
+              </dl>
             </li>
           </ul>
         </nav>
       </div>
       <div class="sp">
         <div class="wrap">
-          <div class="headerlogoWrap">
-            <a href="/">
-              <img
-                src="assets/img/common/header-logo.svg"
-                class="headerlogoWrap__logo"
-                alt=""
-              />
-              <p class="headerlogoWrap__label">運営：税理士事務所グレイス</p>
-            </a>
-          </div>
+          <img src="assets/img/common/header-logo-sp.svg" class="logo" alt="" />
           <div class="bar">
             <a class="menu-trigger">
               <span></span>
@@ -152,9 +147,9 @@
                 </dt>
                 <dd>
                   <a href="#">- 生前対策</a>
-                  <a href="#">- 相続税申告</a>
-                  <a href="#">- 申告手続きの流れ</a>
-                  <a href="#">- 相続税シミュレーター</a>
+                  <a href="#">- 生前対策</a>
+                  <a href="#">- 生前対策</a>
+                  <a href="#">- 生前対策</a>
                 </dd>
               </dl>
             </li>
@@ -170,24 +165,16 @@
                   ><span class="dummyBox"></span>
                 </dt>
                 <dd>
-                  <a href="#">- 事務所案内</a>
-                  <a href="#">- スタッフ紹介</a>
+                  <a href="#">- 生前対策</a>
+                  <a href="#">- 生前対策</a>
+                  <a href="#">- 生前対策</a>
+                  <a href="#">- 生前対策</a>
                 </dd>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">よくある質問</a></dt>
-              </dl>
-            </li>
-            <li class="nav__list__item js-trigger-nav-single">
-              <dl>
-                <dt><a href="#">お知らせ</a></dt>
-              </dl>
-            </li>
-            <li class="nav__list__item js-trigger-nav-single">
-              <dl>
-                <dt><a href="#">プライバシーポリシー</a></dt>
+                <dt><a href="#">料金</a></dt>
               </dl>
             </li>
           </ul>
@@ -211,10 +198,10 @@
       </div>
     </header>
 
-    <main id="simulator">
+    <main id="policy">
       <section class="headBlock">
         <div class="inner">
-          <h1><span class="pink">相続税</span>シミュレーター</h1>
+          <h1>プライバシーポリシー</h1>
         </div>
       </section>
       <section class="breadcrumb">
@@ -222,171 +209,93 @@
           <ul>
             <li>
               <a href=""
-                ><img src="../assets/img/common/home.svg" alt="ホーム"
+                ><img src="assets/img/common/home.svg" alt="ホーム"
               /></a>
             </li>
             <li>
-              <a href="" class="disabled">相続税シミュレーター</a>
+              <a href="" class="disabled">プライバシーポリシー</a>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+
+      <section class="policySection">
         <div class="inner">
-          <p class="lead">
-            以下フォームに全て入力いただき「計算する」ボタンを押していただくと、おおよその相続税額の目安を算出することができます。<br />
-            ただし、このシミュレーターにおける相続税額が0円であっても、ご自身で申告の要否を判断せずに専門家に相談する事をお勧めします。
+          <p>
+            税理士事務所グレイス（以下、「当事務所」といいます。）では、国分寺相続コンシェルジュ（以下、「当サイト」といいます。）の運営に際し、お客様のプライバシーを尊重し個人情報に対して十分な配慮を行うと共に大切に保護し、適正な管理を行うことに努めております。
           </p>
-          <form class="simulatorForm">
-            <dl>
-              <div class="column flexWrap">
-                <dt>財産</dt>
-                <dd><input name="input_zaisan" type="text" value="0"/> 万円</dd>
-              </div>
-              <div class="column flexWrap">
-                <dt>債務</dt>
-                <dd><input name="input_fusai" type="text" value="0" /> 万円</dd>
-              </div>
-              <div class="column flexWrap">
-                <dt>配偶者</dt>
-                <dd>
-                  <input
-                    id="haigusha1"
-                    checked="checked"
-                    name="input_haigusha"
-                    type="radio"
-                    value="1"
-                  /><label for="haigusha1"> 有</label>　<input
-                    id="haigusha0"
-                    name="input_haigusha"
-                    type="radio"
-                    value="0"
-                  /><label for="haigusha0"> 無</label>
-                </dd>
-              </div>
+          <dl>
+            <dt>1. 利用目的</dt>
+            <dd>
+              当事務所は以下の利用範囲内にて個人情報を収集・利用させていただきます。また、それ以外の目的で利用する場合、個人情報をご提供いただく際に、あらかじめ目的を明示しております。
+              <ul>
+                <li>当事務所のサービスに関する情報をご提供する場合</li>
+                <li>
+                  当事務所へのご意見、ご依頼、お問い合わせなどに関するご回答をする場合
+                </li>
+                <li>各種イベント等の情報をご提供する場合</li>
+              </ul>
+            </dd>
+            <dt>2. 個人情報の定義</dt>
+            <dd>
+              当サイトでの個人情報とは、氏名、住所、メールアドレス、電話番号等、お問い合わせフォームよりお送りいただいた個人を特定する情報をいいます。
+            </dd>
 
-              <div class="column flexWrap">
-                <dt>子供</dt>
-                <dd class="select">
-                  <select name="input_ko">
-                    <option selected="selected" value="">
-                      選択してください
-                    </option>
-                    <option value="0">0人</option>
-                    <option value="1">1人</option>
-                    <option value="2">2人</option>
-                    <option value="3">3人</option>
-                    <option value="4">4人</option>
-                    <option value="5">5人</option>
-                    <option value="6">6人</option>
-                    <option value="7">7人</option>
-                    <option value="8">8人</option>
-                    <option value="9">9人</option>
-                  </select>
-                </dd>
-              </div>
-            </dl>
-            <button type="button" onclick="souzokuForm(this.form)" class="submitButton">
-              <img src="../assets/img/souzoku/simulator/icon_compute.png" alt="">
-              <span>計算する</span> 
-            </button>
-            <div class="result">
-              <span>相続税額目安</span> 
-              <input
-                class="output"
-                name="output_souzokuzeigaku"
-                type="text"
-                disabled="disabled"
-              />
-              万円
-            </div>
-            <p class="notice">
-              <span>当シミュレーションは、各法定相続人が法定相続分で相続するものとして算出した概算の相続税額を表示します。</span> <br />
-              <span>Javascriptを利用しています。ご利用環境における動作の保証は致しかねます。</span><br />
-              <span>令和2年1月1日以降の税制に基づき計算しております。</span><br />
-              <span>当シミュレーションはあくまで概算税額の算出です。シミュレーション結果を利用したことで生じた不利益や損害等に関しましては、当事務所では責任を負いかねますのでその点ご了承ください。</span>
-            </p>
-            <div style="display: none">
-              <input
-                class="output"
-                name="output_souzokunin"
-                type="hidden"
-              /><input
-                class="output"
-                name="output_zaisan"
-                type="hidden"
-              /><input class="output" name="output_koujo" type="hidden" /><input
-                class="output"
-                name="output_kazeigaku"
-                type="hidden"
-              />
-
-              <input
-                class="output"
-                name="output_souzokuzeigakukoujyo"
-                type="text"
-                disabled="disabled"
-              />
-
-              <input
-                class="output"
-                name="output_koujogaku"
-                type="text"
-                disabled="disabled"
-              />
-
-              <input
-                class="output"
-                name="output_kazeizaisangaku"
-                type="text"
-                disabled="disabled"
-              />
-
-              <input
-                class="output"
-                name="output_haigushazeigaku"
-                type="text"
-                disabled="disabled"
-              />
-              <input
-                class="output"
-                name="output_kisokoujyo"
-                type="text"
-                disabled="disabled"
-              />
-
-              <input
-                class="output"
-                name="output_haigushazeigakukoujyo"
-                type="text"
-                disabled="disabled"
-              />
-
-              <input
-                class="output"
-                name="output_souzokuzeigaku_tekiyou"
-                type="text"
-                disabled="disabled"
-              />
-              <input
-                class="output"
-                name="output_kisokoujyoko"
-                type="text"
-                disabled="disabled"
-              />
-            </div>
-          </form>
-          <p class="buttomText">この税額はあくまで簡易的な試算の算出額です。様々な税制度の活用や相続対策を行うことにより節税をすることもできます。<br>
-            より正しい相続税額や相続対策について知りたい方はお気軽にご相談ください。</p>
+            <dt>3. 個人情報の管理</dt>
+            <dd>お客様よりご提供いただいた個人情報は厳正に管理しています。</dd>
+            <dt>4. 第三者への提供</dt>
+            <dd>
+              お客様の個人情報は、以下の場合を除いて第三者に提供することは致しません。
+              <ul>
+                <li>
+                  法的拘束力がある第三者機関からの書面による正式な協力要請、照会があった場合
+                </li>
+                <li>お客様ご本人からの同意があった場合</li>
+              </ul>
+            </dd>
+            <dt>5. クッキー（Cookie）の利用</dt>
+            <dd>
+              当サイトではクッキー（Cookie）を利用しております。
+              クッキー（Cookie）を使用する目的は、お客様が当サイトに再度訪問した際、便利にお使い頂くことを目的に使用しており、お客様のプライバシーを侵害するものではありません。
+            </dd>
+            <dt>6. 本ポリシーの改定</dt>
+            <dd>
+              本ポリシーの内容は改定することがありますので定期的にご確認いただきますようお願いいたします。<br /><br />
+              プライバシポリシーに関するお問い合わせ<br>
+              税理士事務所グレイス<br>
+              TEL：042-316-8566 FAX：042-316-8587<br>
+              E-mail：info#grace-souzoku.jp　#を@に替えて<br>
+            </dd>
+          </dl>
         </div>
       </section>
 
-      <section id="buttomLinkWrap">
+      <section class="contact_common">
         <div class="inner">
-          <p>
-            当事務所の分かりやすい料金体系
-            <a href="" class="button">料金</a>
+          <h2 class="contact_common__head">
+            <span class="yellow">初回相談無料</span>
+            お気軽にお問い合わせください
+          </h2>
+          <p class="contact_common__lead">
+            相続に関するお悩み・疑問・ご相談などありましたら、下記までお気軽にお問い合わせください。<br />
+            初回相談は無料で行っておますので、安心してご相談いただけます。<br />
+            国分寺・小平・小金井・府中にお住いの方は特に歓迎いたします。
           </p>
+          <ul class="contact_common__list">
+            <li
+              class="contact_common__list__item contact_common__list__item--first"
+            >
+              <a href="tel:042-316-8566" class="tel">
+                <span class="tel__number">042-316-8566</span>
+                <span class="tel__info">電話受付　平日 9:00 ～ 18:00</span>
+              </a>
+            </li>
+            <li
+              class="contact_common__list__item contact_common__list__item--second"
+            >
+              <a href="#?">お問い合わせ</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -396,7 +305,7 @@
         <div class="footer__left">
           <img
             class="footer__left__logo"
-            src="../assets/img/footer/logo.svg"
+            src="assets/img/footer/logo.svg"
             alt="税理士事務所グレイス"
           />
           <p class="footer__left__address">
