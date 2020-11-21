@@ -6,10 +6,10 @@
   border-radius: 10px;
   margin-bottom: 4rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.souzokuMenuList__item:hover{
-  opacity: .7;
+.souzokuMenuList__item:hover {
+  opacity: 0.7;
 }
 .souzokuMenuList__item .radiusImgBox {
   border-bottom-right-radius: 0;
@@ -23,7 +23,7 @@
 }
 .souzokuMenuList__item dd {
   padding: 0 20px;
-  height: 10rem;
+  height: 11.5rem;
 }
 .souzokuMenuList__item .button {
   display: block;
@@ -255,6 +255,101 @@
 .flowList__Item.item05 dl {
   padding-bottom: 0.5rem;
 }
+#simulator .lead {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#simulator .simulatorForm {
+  border: 5px solid #ebebeb;
+  padding: 5rem;
+  margin-bottom: 7rem;
+}
+#simulator .simulatorForm .column {
+  align-items: center;
+  border-top: 1px solid #cccccc;
+}
+#simulator .simulatorForm .column:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+#simulator .simulatorForm dt {
+  width: 35%;
+  background: #f6f6f6;
+  padding: 2.8rem 1.5rem;
+  font-weight: bold;
+}
+#simulator .simulatorForm dd {
+  width: 59.5%;
+}
+#simulator .column input,
+#simulator .column select {
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  margin-right: 0.3rem;
+  font-size: 1.6rem;
+}
+#simulator .column input[type="text"] {
+  width: 15rem;
+}
+#simulator .column select {
+  width: 20rem;
+}
+.select {
+  position: relative;
+}
+.select::after {
+  content: "▼";
+  color: #222222;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 17.5rem;
+  top: 0.9rem;
+}
+#simulator .submitButton {
+  width: 25rem;
+  background: #bb284d;
+  padding: 1.5rem;
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 4rem;
+  transition: 0.3s;
+  margin: 5rem auto;
+  transition: 0.3s;
+}
+#simulator .submitButton img {
+  width: auto;
+  margin-right: 1rem;
+}
+#simulator .result {
+  font-size: 2.2rem;
+  font-weight: bold;
+  width: 35rem;
+  margin: 0 auto 4.5rem;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 0.5rem;
+}
+#simulator .result input {
+  font-size: 4rem;
+  width: 16.2rem;
+  text-align: right;
+  margin-right: 0.7rem;
+}
+#simulator .notice {
+  font-size: 1.4rem;
+}
+#simulator .notice span {
+  padding-left: 2rem;
+  display: inline-block;
+  position: relative;
+}
+#simulator .notice span::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @media (max-width: 1100px) {
 }
 
@@ -360,5 +455,43 @@
     font-size: 2rem;
     font-weight: bold;
     position: relative;
+  }
+  #simulator .simulatorForm {
+    border: none;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  #simulator .simulatorForm dt {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #cccccc;
+  }
+  #simulator .simulatorForm dd {
+    padding: 1.3rem;
+    width: 100%;
+  }
+  #simulator .result {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  #simulator .result input {
+    width: 45vw;
+  }
+  #simulator .lead {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  #simulator .submitButton {
+    width: 85%;
+    margin: 3rem auto;
+  }
+  .select::after {
+    content: "▼";
+    color: #222222;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 19rem;
+    top: 2.1rem;
   }
 }
