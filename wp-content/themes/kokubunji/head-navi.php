@@ -17,45 +17,41 @@
           <ul class="nav__list">
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="strengths">私たちの強み</a></dt>
+                <dt><a href="/strengths">私たちの強み</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav">
               <dl>
-                <dt><a href="#">相続について</a></dt>
+                <dt><a href="souzoku">相続について</a></dt>
                 <dd>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
+                  <a href="/souzoku/seizen">生前対策</a>
+                  <a href="/souzoku/shinkoku">相続税申告</a>
+                  <a href="/souzoku/flow">申告手続きの流れ</a>
+                  <a href="/souzoku/simulator">相続シミュレーター</a>
                 </dd>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">料金</a></dt>
+                <dt><a href="/price">料金</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav">
               <dl>
-                <dt><a href="#">事務所内容</a></dt>
+                <dt><a href="/office">事務所内容</a></dt>
                 <dd>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
-                  <a href="#">生前対策</a>
+                  <a href="/office">事務所案内</a>
+                  <a href="/staff">スタッフ紹介</a>
                 </dd>
               </dl>
             </li>
             <li class="nav__list__item">
               <dl>
-                <dt><a href="#">よくある質問</a></dt>
+                <dt><a href="/faq">よくある質問</a></dt>
               </dl>
             </li>
             <li class="nav__list__item nav__list__item--contact">
-              <a href="#">お問い合わせ</a>
+              <a href="contact">お問い合わせ</a>
             </li>
           </ul>
         </nav>
@@ -84,55 +80,55 @@
           <ul class="nav__list">
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="strengths/">私たちの強み</a></dt>
+                <dt><a href="/strengths">私たちの強み</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav">
               <dl>
                 <dt>
-                  <a href="#" class="plus"
+                  <a href="souzoku" class="plus"
                     >相続について</a>
                 </dt>
                 <span class="dummyBox"></span>
                 <dd>
-                  <a href="#">- 生前対策</a>
-                  <a href="#">- 相続税申告</a>
-                  <a href="#">- 申告手続きの流れ</a>
-                  <a href="#">- 相続税シミュレーター</a>
+                  <a href="/souzoku/seizen">- 生前対策</a>
+                  <a href="/souzoku/shinkoku">- 相続税申告</a>
+                  <a href="/souzoku/flow">- 申告手続きの流れ</a>
+                  <a href="/souzoku/simulator">- 相続シミュレーター</a>
                 </dd>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">料金</a></dt>
+                <dt><a href="/price">料金</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav">
               <dl>
                 <dt>
-                  <a href="#" class="plus">事務所内容</a
+                  <a href="/office" class="plus">事務所内容</a
                   >
                 </dt>
                 <span class="dummyBox"></span>
                 <dd>
-                  <a href="#">- 事務所案内</a>
-                  <a href="#">- スタッフ紹介</a>
+                  <a href="/office">- 事務所案内</a>
+                  <a href="/staff">- スタッフ紹介</a>
                 </dd>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">よくある質問</a></dt>
+                <dt><a href="/faq">よくある質問</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">お知らせ</a></dt>
+                <dt><a href="/news">お知らせ</a></dt>
               </dl>
             </li>
             <li class="nav__list__item js-trigger-nav-single">
               <dl>
-                <dt><a href="#">プライバシーポリシー</a></dt>
+                <dt><a href="/privacypolicy">プライバシーポリシー</a></dt>
               </dl>
             </li>
           </ul>
@@ -148,7 +144,7 @@
             <li
               class="contact_common__list__item contact_common__list__item--second"
             >
-              <a href="#?">お問い合わせ</a>
+              <a href="contact">お問い合わせ</a>
             </li>
           </ul>
           <p class="close sp">メニューを閉じる</p>

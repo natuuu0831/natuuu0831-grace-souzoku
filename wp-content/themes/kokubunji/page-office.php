@@ -81,7 +81,7 @@ Template Name: 事務所案内
         </div>
     </section>
 
-    <section class="access">
+    <section id="access" class="access">
         <div class="inner">
             <h2 class="header-dotted">
                 アクセス

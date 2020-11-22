@@ -24,7 +24,7 @@
           <li
             class="contact_common__list__item contact_common__list__item--second"
           >
-            <a href="#?">お問い合わせ</a>
+            <a href="/contact">お問い合わせ</a>
           </li>
         </ul>
       </div>

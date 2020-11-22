@@ -12,60 +12,60 @@
             ビルドシティプラザ4F<br />
             JR中央線「国分寺駅」北口から徒歩3分
           </p>
-          <a href="#?" class="footer__left__btn">アクセス</a>
+          <a href="/office#access" class="footer__left__btn">アクセス</a>
         </div>
         <div class="footer__right pc">
           <ul class="footer__right__list footer__right__list--first">
             <li class="footer__right__list__item">
-              <a href="#?">ホーム</a>
+              <a href="/">ホーム</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="strengths/">私たちの強み</a>
+              <a href="/strengths">私たちの強み</a>
             </li>
           </ul>
           <ul class="footer__right__list footer__right__list--second">
             <li class="footer__right__list__item">
-              <a href="#?">相続について</a>
+              <a href="/souzoku">相続について</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; 事前対策</a>
+              <a href="/souzoku/seizen">ー&nbsp; 生前対策</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; 相続税申告</a>
+              <a href="/souzoku/shinkoku">ー&nbsp; 相続税申告</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; 申告手続きの流れ</a>
+              <a href="/souzoku/flow">ー&nbsp; 申告手続きの流れ</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; 相続税シミュレーター</a>
+              <a href="/souzoku/simulator">ー&nbsp; 相続税シミュレーター</a>
             </li>
           </ul>
           <ul class="footer__right__list footer__right__list--third">
             <li class="footer__right__list__item">
-              <a href="#?">料金</a>
+              <a href="/price">料金</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">事務所案内</a>
+              <a href="/office">事務所案内</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; 事務所案内</a>
+              <a href="/office">ー&nbsp; 事務所案内</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">ー&nbsp; スタッフ紹介</a>
+              <a href="/staff">ー&nbsp; スタッフ紹介</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">よくある質問</a>
+              <a href="/faq">よくある質問</a>
             </li>
           </ul>
           <ul class="footer__right__list footer__right__list--second">
             <li class="footer__right__list__item">
-              <a href="#?">お知らせ</a>
+              <a href="/news">お知らせ</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">プライバシーポリシー</a>
+              <a href="/privacypolicy">プライバシーポリシー</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="#?">お問い合わせ</a>
+              <a href="/contact">お問い合わせ</a>
             </li>
           </ul>
         </div>

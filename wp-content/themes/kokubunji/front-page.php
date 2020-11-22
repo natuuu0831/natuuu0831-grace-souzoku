@@ -119,7 +119,7 @@
             <p class="strengths__list__item__txt">分かりやすい<br />料金体系</p>
           </li>
         </ul>
-        <a class="strengths__btn" href="#?">詳しく見る</a>
+        <a class="strengths__btn" href="/strengths">詳しく見る</a>
       </div>
     </section>
 
@@ -138,7 +138,7 @@
               <li
                 class="about__boxWrap__boxLeft__list__item about__boxWrap__boxLeft__list__item--first"
               >
-                <a href="#?"><span class="pink">生前</span>対策</a>
+                <a href="/souzoku/seizen"><span class="pink">生前</span>対策</a>
                 <p>
                   生前対策を行うことにより、不安や悩みの解消、相続税の把握、相続税の節税、納税資金の確保などを行うことが出来ます。
                 </p>
@@ -146,7 +146,7 @@
               <li
                 class="about__boxWrap__boxLeft__list__item about__boxWrap__boxLeft__list__item--second"
               >
-                <a href="#?"><span class="pink">相続税</span>申告</a>
+                <a href="/souzoku/shinkoku"><span class="pink">相続税</span>申告</a>
                 <p>
                   相続発生後の節税対策は生前対策に比べると限られてきますが、その上でご提案差し上げながら相続税申告をサポートいたします。
                 </p>
@@ -158,13 +158,13 @@
               <li
                 class="about__boxWrap__boxRight__list__item about__boxWrap__boxRight__list__item--first"
               >
-                <a href="#?">申告手続きの流れ</a>
+                <a href="/souzoku/flow">申告手続きの流れ</a>
                 <p>遺産相続の申告手続きの流れをご紹介します。</p>
               </li>
               <li
                 class="about__boxWrap__boxRight__list__item about__boxWrap__boxRight__list__item--second"
               >
-                <a href="#?">相続税シミュレーター</a>
+                <a href="/souzoku/simulator">相続税シミュレーター</a>
                 <p>
                   現在の財産額などを入力して、簡易的に相続税額を割り出すことができます。
                 </p>
@@ -172,7 +172,7 @@
             </ul>
           </div>
         </div>
-        <a class="about__btn" href="#?">詳しく見る</a>
+        <a class="about__btn" href="/souzoku">詳しく見る</a>
       </div>
     </section>
 
@@ -180,52 +180,38 @@
       <div class="inner">
         <div class="news__left">
           <h2 class="news__head">お知らせ</h2>
-          <a class="news__btn pc" href="#?">お知らせ一覧</a>
+          <a class="news__btn pc" href="news">お知らせ一覧</a>
         </div>
         <div class="news__right">
           <ul class="news__right__list">
+          <?php
+                $newslist = get_posts(array(
+                    'posts_per_page' => 5,
+                    'post_type' => 'news'
+                ));
+                foreach ($newslist as $post) :
+                setup_postdata($post);
+            ?>
             <li class="news__right__list__item">
               <dl>
                 <dt>
-                  <span class="date">2020.11.05</span>
-                  <span class="category">お知らせ</span>
+                <span class="date"><?php the_time('Y年m月'); ?></span>
+                  <span class="category">
+                  <?php
+                    if ($terms = get_the_terms($post->ID, 'news_category')) {
+                        foreach ($terms as $term) {
+                            echo esc_html($term->name);
+                        }
+                    }
+                    ?>                      
+                  </span>
                 </dt>
-                <dd><a href="#?">税理士スタッフが1名増えました</a></dd>
+                <dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
               </dl>
             </li>
-            <li class="news__right__list__item">
-              <dl>
-                <dt>
-                  <span class="date">2020.11.05</span>
-                  <span class="category">お知らせ</span>
-                </dt>
-                <dd><a href="#?">税理士スタッフが1名増えました</a></dd>
-              </dl>
-            </li>
-            <li class="news__right__list__item">
-              <dl>
-                <dt>
-                  <span class="date">2020.11.05</span>
-                  <span class="category">お知らせ</span>
-                </dt>
-                <dd><a href="#?">税理士スタッフが1名増えました</a></dd>
-              </dl>
-            </li>
-            <li class="news__right__list__item">
-              <dl>
-                <dt>
-                  <span class="date">2020.11.05</span>
-                  <span class="category">お知らせ</span>
-                </dt>
-                <dd>
-                  <a href="#?"
-                    >税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました税理士スタッフが1名増えました</a
-                  >
-                </dd>
-              </dl>
-            </li>
+            <?php endforeach; ?>
           </ul>
-          <a class="news__btn sp" href="#?">お知らせ一覧</a>
+          <a class="news__btn sp" href="/news">お知らせ一覧</a>
         </div>
       </div>
     </section>
