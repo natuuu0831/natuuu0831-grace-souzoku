@@ -12,7 +12,7 @@ function pagenation( $pages, $paged, $range = 2, $show_only = false ) {
   
     if ( $show_only && $pages === 1 ) {
         // １ページのみで表示設定が true の時
-        echo '<ul class="pager"><li class="active">1</li></ul>';
+        echo '<ul class="pager"><li class="page-numbers  active">1</li></ul>';
         return;
     }
   
@@ -34,7 +34,7 @@ function pagenation( $pages, $paged, $range = 2, $show_only = false ) {
             if ( $i <= $paged + $range && $i >= $paged - $range ) {
                 // $paged +- $range 以内であればページ番号を出力
                 if ( $paged === $i ) {
-                    echo '<li class="active">', $i ,'</li>';
+                    echo '<li class="page-numbers active">', $i ,'</li>';
                 } else {
                     echo '<li><a href="', get_pagenum_link( $i ) ,'">', $i ,'</a></li>';
                 }

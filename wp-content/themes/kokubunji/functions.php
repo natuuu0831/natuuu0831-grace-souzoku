@@ -12,6 +12,7 @@ function register_script()
 {
   wp_register_script('custom', '/assets/js/custom.js');
   wp_register_script('faq', '/assets/js/faq.js');
+  wp_register_script('simulator', '/assets/js/simulator.js');
 }
 function add_script()
 {
@@ -20,6 +21,8 @@ function add_script()
 
   if (is_page('faq')) {
     wp_enqueue_script('faq');
+  } else{
+    wp_enqueue_script('simulator');
   }
 }
 //read CSS
@@ -36,6 +39,9 @@ function register_style()
   wp_register_style('price', '/assets/css/price.css');
   wp_register_style('faq', '/assets/css/faq.css');
   wp_register_style('news', '/assets/css/news.css');
+  wp_register_style('souzoku', '/assets/css/souzoku.css');
+  wp_register_style('contact', '/assets/css/contact.css');
+  wp_register_style('privacypolicy', '/assets/css/policy.css');
 }
 function add_stylesheet()
 {
@@ -62,7 +68,15 @@ wp_enqueue_style('footer');
         wp_enqueue_style('news');
     } elseif (is_singular('news')) {
         wp_enqueue_style('news');
-    }
+    } elseif (is_page('privacypolicy')) {
+        wp_enqueue_style('privacypolicy');
+    }elseif (is_page('contact')) {
+        wp_enqueue_style('contact');
+    } elseif (is_page('thanks')) {
+        wp_enqueue_style('contact');
+    }elseif (array(is_page('souzoku'),is_page('seizen'),is_page('shinkoku'),is_page('flow'),is_page('simulator'))) {
+        wp_enqueue_style('souzoku');
+    } 
 //   if (is_front_page()) {
 //     wp_enqueue_style('top');
 //   } elseif (is_singular('test')) {
@@ -113,4 +127,17 @@ register_taxonomy(
 add_action( 'admin_menu', 'remove_menus' );
 function remove_menus(){
     remove_menu_page( 'edit.php' ); //投稿メニュー
+}
+
+
+//サンクスページ
+add_action( 'wp_footer', 'add_thanks_page' );
+function add_thanks_page() {
+echo <<< EOD
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'contact/thanks/'; /* 遷移先のURL */
+}, false );
+</script>
+EOD;
 }
