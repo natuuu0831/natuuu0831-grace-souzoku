@@ -121,6 +121,10 @@
       }
       .footer .inner02 .txt {
         text-align: left;
+        font-size: 1.4rem;
+      }
+      .footer .copy{
+        font-size: 1.4rem;
       }
       .footer #pageTopButton{
         bottom: 10px;

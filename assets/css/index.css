@@ -70,7 +70,6 @@
 @media (max-width: 767px) {
   .about__lead {
     text-align: left;
-    font-size: 4.26vw;
     line-height: 1.8;
   }
 }
@@ -495,7 +494,6 @@
 @media (max-width: 767px) {
   .flow__lead {
     text-align: left;
-    font-size: 4.26vw;
     line-height: 1.8;
   }
 }
@@ -984,7 +982,6 @@
 @media (max-width: 767px) {
   .strengths__lead {
     text-align: left;
-    font-size: 1.4rem;
     line-height: 1.8;
   }
 }
@@ -1148,7 +1145,6 @@
 @media (max-width: 767px) {
   .trouble__lead {
     text-align: left;
-    font-size: 1.4rem;
     line-height: 1.8;
   }
 }

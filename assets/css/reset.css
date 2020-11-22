@@ -212,7 +212,7 @@ input[type="date"]::-webkit-clear-button {
 }
 body {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333333;
     overflow-wrap: break-word;
     font-family: source-han-sans-japanese, sans-serif, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "メイリオ", sans-serif;
