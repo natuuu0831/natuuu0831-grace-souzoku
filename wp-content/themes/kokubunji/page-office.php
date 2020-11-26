@@ -172,13 +172,6 @@ Template Name: 事務所案内
             </div>
         </div>
     </section>
-    
-    <section class="consultation_common">
-        <div class="inner">
-            <p>こんなスタッフが対応します</p>
-            <a href="" class="btn_pink">スタッフ紹介</a>
-        </div>
-    </section>
 
   <section class="consultation_common">
     <div class="inner">

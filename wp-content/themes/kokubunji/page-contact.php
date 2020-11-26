@@ -16,7 +16,7 @@ Template Name: お問い合わせ
         <div class="inner">
           <ul>
             <li>
-              <a href=""
+              <a href="/"
                 ><img src="assets/img/common/home.svg" alt="ホーム"
               /></a>
             </li>
