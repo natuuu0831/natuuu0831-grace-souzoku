@@ -17,7 +17,7 @@ Template Name: 私たちの強み
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="/assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="/assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="" class="disabled">私たちの強み</a>
@@ -28,7 +28,7 @@ Template Name: 私たちの強み
     <section class="concierge">
         <div class="inner">
             <h2 class="header-dotted">
-                お客様の<span class="pink">相続コンシェルジュ</span><br class="sp">として
+                お客様の<br class="sp"><span class="pink">相続コンシェルジュ</span>として
             </h2>
             <p class="lead">私たちは相続のコンシェルジュをうたっております。コンシェルジュとは、ホテルなどで行先の案内や様々な準備のほか、全体的なプランニングまで、お客さまの多くのリクエストに応えるプロのスタッフのことです。その形やマニュアルの無いサービスを求められるさまは、まさに臨機応変で、それぞれのお客様にあったサービスを提供する仕事だといえます。同様に私たちも、<span class="highLight">マニュアルのない相続について、お客様一人ひとりの相続の状況に臨機応変に対応させて頂きます。</span></p>
             <ul>
@@ -97,7 +97,7 @@ Template Name: 私たちの強み
     <section class="consultation_common">
         <div class="inner">
             <p>当事務所の相続対策や相続について</p>
-            <a href="#?" class="btn_pink">相続について</a>
+            <a href="/souzoku" class="btn_pink">相続について</a>
         </div>
     </section>
 

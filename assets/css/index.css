@@ -157,7 +157,7 @@
 
 .about__boxWrap__boxLeft__list__item a {
   display: block;
-  padding: 10.6rem 0;
+  padding: 10rem 0;
   margin-bottom: 1.3rem;
   font-weight: bold;
   border-radius: 10px;
@@ -609,7 +609,7 @@
 
 .main {
   background: url(../img/top/mv-bg.gif) 0 0/cover no-repeat;
-  margin-top: -120px;
+  margin-top: -125px;
   background-position-y: -160px;
 }
 

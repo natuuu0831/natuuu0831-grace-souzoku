@@ -11,6 +11,7 @@ function add_jquery_scripts()
 function register_script()
 {
   wp_register_script('custom', '/assets/js/custom.js');
+  wp_register_script('top', '/assets/js/top.js');
   wp_register_script('faq', '/assets/js/faq.js');
   wp_register_script('simulator', '/assets/js/simulator.js');
 }
@@ -19,7 +20,10 @@ function add_script()
   register_script();
   wp_enqueue_script('custom');
 
-  if (is_page('faq')) {
+  if (is_front_page()) {
+    wp_enqueue_script('top');
+  } 
+  elseif (is_page('faq')) {
     wp_enqueue_script('faq');
   } else{
     wp_enqueue_script('simulator');

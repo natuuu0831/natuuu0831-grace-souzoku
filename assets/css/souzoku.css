@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.souzokuMenuList {
+  margin-bottom: 4rem;
+}
 .souzokuMenuList__item {
   width: 31.9%;
   padding-bottom: 3.5rem;
@@ -36,7 +39,9 @@
   margin: 20px auto 0;
   background-color: #f57679;
 }
-
+#seizen .red {
+  color: #cc0000;
+}
 #sec1 img {
   width: 44%;
   margin-left: 60px;
@@ -365,6 +370,8 @@
     width: 100%;
     margin-bottom: 10vw;
   }
+}
+@media (max-width: 767px) {
   #sec1 .flex {
     display: block;
   }

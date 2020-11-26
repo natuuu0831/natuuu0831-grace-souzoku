@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: ニュース
+*/
+?>
 <?php get_header(); ?>
 
 <?php include('head-navi.php'); ?>
@@ -11,7 +16,7 @@
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="/assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="/assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="" class="disabled">お知らせ</a>
@@ -27,19 +32,21 @@
                     <?php while ( have_posts() ) : the_post(); ?>
                     <li>
                         <dl>
-                            <dt>
-                                <span class="date"><?php the_time('Y年m月'); ?></span>
-                                <span class="tag pink">
-                                <?php
-                                    if ($terms = get_the_terms($post->ID, 'news_category')) {
-                                        foreach ($terms as $term) {
-                                            echo esc_html($term->name);
+                            <a href="<?php the_permalink(); ?>">
+                                <dt>
+                                    <span class="date"><?php the_time('Y.m.d'); ?></span>
+                                    <span class="tag pink">
+                                    <?php
+                                        if ($terms = get_the_terms($post->ID, 'news_category')) {
+                                            foreach ($terms as $term) {
+                                                echo esc_html($term->name);
+                                            }
                                         }
-                                    }
-                                 ?>
-                                </span>
-                            </dt>
-                            <dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
+                                    ?>
+                                    </span>
+                                </dt>
+                                <dd><?php the_title(); ?></dd>
+                            </a>
                         </dl>
                     </li>
                     <?php endwhile;?>

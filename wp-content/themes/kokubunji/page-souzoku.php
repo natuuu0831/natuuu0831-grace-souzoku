@@ -17,7 +17,7 @@ Template Name: 相続TOP
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="../assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="../assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="" class="disabled">相続について</a>

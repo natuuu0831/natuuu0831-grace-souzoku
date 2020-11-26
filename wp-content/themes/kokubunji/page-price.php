@@ -16,7 +16,7 @@ Template Name: 料金
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="/assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="/assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="" class="disabled">料金</a>
@@ -26,7 +26,7 @@ Template Name: 料金
     </section>
 
     <h2 class="header-dotted">
-        いちばん大切なのは<br><span class="pink">お客様の満足度</span>
+        いちばん大切なのは<span class="pink"><br class="sp">お客様の満足度</span>
     </h2>
 
     <section class="leadBox">
@@ -142,7 +142,7 @@ Template Name: 料金
     <section class="consultation_common">
         <div class="inner">
             <p>税理士事務所グレイスについて</p>
-            <a href="#?" class="btn_pink">事務所案内</a>
+            <a href="/office" class="btn_pink">事務所案内</a>
         </div>
     </section>
     

@@ -11,7 +11,7 @@
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="/assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="/assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="" class="disabled">お知らせ</a>
@@ -27,7 +27,7 @@
                     <li>
                         <dl>
                             <dt>
-                                <span class="date"><?php the_time('Y年m月'); ?></span>
+                                <span class="date"><?php the_time('Y.m.d'); ?></span>
                                 <span class="tag pink">
                                 <?php
                                     if ($terms = get_the_terms($post->ID, 'news_category')) {
@@ -38,18 +38,19 @@
                                  ?>
                                 </span>
                             </dt>
-                            <dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
+                            <dd class="newsTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
                             
                         </dl>
                     </li>
                 </ul>
                 <div class="fetchDetail">
-                        <?php the_content(); ?>
-                    </div>
+                    <?php the_content(); ?>
+                </div>
                     <?php endwhile;?>
                 <?php endif; ?>
-
+                <a href="/news" class="button">一覧に戻る</a>
             </div>
+            
             <?php include('news-side.php'); ?>
         </div>
     </section>

@@ -51,7 +51,7 @@
               <a href="/office">ー&nbsp; 事務所案内</a>
             </li>
             <li class="footer__right__list__item">
-              <a href="/staff">ー&nbsp; スタッフ紹介</a>
+              <a href="/office/staff">ー&nbsp; スタッフ紹介</a>
             </li>
             <li class="footer__right__list__item">
               <a href="/faq">よくある質問</a>

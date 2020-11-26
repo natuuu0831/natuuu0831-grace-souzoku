@@ -1,17 +1,20 @@
 @charset "UTF-8";
 img {
-    max-width: 100%;
-  }
+  max-width: 100%;
+}
 html {
-font-size: 62.5%;
+  font-size: 62.5%;
+}
+body {
+  display: none;
 }
 .sp {
-display: none !important;
+  display: none !important;
 }
 .inner {
-    margin: 0 auto;
-    max-width: 1100px;
-    box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1100px;
+  box-sizing: border-box;
 }
 .hidden {
   z-index: -1;
@@ -20,33 +23,32 @@ display: none !important;
   overflow: hidden;
 }
 
-a.disabled{
-    pointer-events: none;
+a.disabled {
+  pointer-events: none;
 }
-a{
-  transition: .3s;
+a {
+  transition: 0.3s;
 }
-a:hover{
-  opacity: .7;
-  
+a:hover {
+  opacity: 0.7;
 }
 /* ▼▼▼ カラーアセット ▼▼▼ */
 .pink {
-    color: #f57679;
-  }
+  color: #f57679;
+}
 .red {
-    color: #bb284d;
-    font-weight: bold;
-  }
+  color: #bb284d;
+  font-weight: bold;
+}
 .yellow {
-color: #FFFF99;
+  color: #ffff99;
 }
 .highLight {
-    background: linear-gradient(transparent 70%, #FFEFA9 70%);
-    font-weight: bold;
-  }
+  background: linear-gradient(transparent 70%, #ffefa9 70%);
+  font-weight: bold;
+}
 .blue {
-  color: #3366CC;
+  color: #3366cc;
 }
 /* ▲▲▲ カラーアセット ▲▲▲ */
 
@@ -72,276 +74,303 @@ color: #FFFF99;
 
 /* ▼▼▼ h2ピンクドット用 ▼▼▼ */
 h2.header-dotted {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    margin-bottom: 7.6rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 7.6rem;
 }
 h2.header-dotted::after {
-    position: absolute;
-    content: '';
-    width: 6rem;
-    height: .8rem;
-    right: 0;
-    left: 0;
-    bottom: -3.5rem;
-    margin: auto;
-    background: url(../img/common/dot.svg) 0 0 no-repeat;
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 0.8rem;
+  right: 0;
+  left: 0;
+  bottom: -3.5rem;
+  margin: auto;
+  background: url(../img/common/dot.svg) 0 0 no-repeat;
 }
-.lead{
-    margin-bottom: 4rem;
+.lead {
+  margin-bottom: 4rem;
 }
 /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
 
 /* ▼▼▼ ピンクボタン用 ▼▼▼ */
-.btn_pink{
-    display: block;
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 1.2rem;
-    border-radius: 4rem;
-    color: #fff;
-    width: 25rem;
-    margin: auto;
-    background-color: #f57679;
+.btn_pink {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border-radius: 4rem;
+  color: #fff;
+  width: 25rem;
+  margin: auto;
+  background-color: #f57679;
 }
 /* ▲▲▲ ピンクボタン用 ▲▲▲ */
 
 /* ▼▼▼ common問合せ用 ▼▼▼ */
 .contact_common {
-    background: url(../img/top/contact-bg.jpg) 0 0/cover no-repeat;
-    padding: 5.2rem 0;
-    background-position: center top;
-  }
-  .contact_common__head {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  
-  .contact_common__head .yellow {
-    color: #FFFF99;
-  }
-  
-  .contact_common__lead {
-    text-align: center;
-    margin-bottom: 4rem;
-    color: #fff;
-  }
-  .contact_common__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-  .contact_common__list__item {
-    text-align: center;
-    width: 29rem;
-    margin-right: 2.9rem;
-  }
-  .contact_common__list__item:last-of-type {
-    margin-right: 0;
-  }
-  .contact_common__list__item--first {
-    border: 1px solid;
-    border-radius: 4rem;
-    padding: .7rem 0;
-    line-height: 1.2;
-  }
-  
-  .contact_common__list__item--first .tel__number {
-    font-size: 2.8rem;
-    font-weight: bold;
-    display: inline-block;
-    padding-left: 2rem;
-    background: url(../img/top/contact-tel.svg) 0 55% no-repeat;
-  }
-  .contact_common__list__item--first .tel__info {
-    font-size: 1.2rem;
-    display: inline-block;
-  }
-  .contact_common__list__item--second {
-    
-  }
+  background: url(../img/top/contact-bg.jpg) 0 0 / cover no-repeat;
+  padding: 5.2rem 0;
+  background-position: center top;
+}
+.contact_common__head {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact_common__head .yellow {
+  color: #ffff99;
+}
+
+.contact_common__lead {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+.contact_common__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.contact_common__list__item {
+  text-align: center;
+  width: 29rem;
+  margin-right: 2.9rem;
+}
+.contact_common__list__item:last-of-type {
+  margin-right: 0;
+}
+.contact_common__list__item--first {
+  border: 1px solid;
+  border-radius: 4rem;
+  padding: 0.7rem 0;
+  line-height: 1.2;
+}
+
+.contact_common__list__item--first .tel__number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 2rem;
+  background: url(../img/top/contact-tel.svg) 0 55% no-repeat;
+}
+.contact_common__list__item--first .tel__info {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.contact_common__list__item--second {
+}
 
 .contact_common__list__item--second a {
-    background: url(../img/top/contact-mail.svg) 27% 52% no-repeat;
-    padding: 2.3rem 0;
-    border-radius: 4rem;
-    line-height: 1.2;
-    background-color: #bb284d;
-    font-size: 2rem;
-    display: block;
-    padding-left: 3rem;
-    font-weight: bold;
-  }
-  
-  /* ▲▲▲ common問合せ用 ▲▲▲ */
+  background: url(../img/top/contact-mail.svg) 27% 52% no-repeat;
+  padding: 2.3rem 0;
+  border-radius: 4rem;
+  line-height: 1.2;
+  background-color: #bb284d;
+  font-size: 2rem;
+  display: block;
+  padding-left: 3rem;
+  font-weight: bold;
+}
 
-  /* ▼▼▼ headBlock ▼▼▼ */
+/* ▲▲▲ common問合せ用 ▲▲▲ */
+
+/* ▼▼▼ headBlock ▼▼▼ */
 .headBlock {
-    background: url(../img/common/headBlock-bg.gif) 0 0 /cover no-repeat;
-    margin-bottom: 1rem;
-  }
-.headBlock h1{
-    text-align: center;
-    font-size: 4rem;
-    padding: 6.5rem 0;
-  }
+  background: url(../img/common/headBlock-bg.gif) 0 0 / cover no-repeat;
+  margin-bottom: 1rem;
+}
+.headBlock h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 6.5rem 0;
+}
 /* ▲▲▲ headBlock ▲▲▲ */
-
-  /* ▼▼▼ breadcrumb ▼▼▼ */
-  .breadcrumb {
-    font-size: 1.4rem;
-    margin-bottom: 8rem;
-  }
-  .breadcrumb ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .breadcrumb ul li {
-   margin-right: 3.2rem;
-   position: relative;
-  }
-  .breadcrumb ul li:last-of-type::after {
-    content: none;
-   }
-  .breadcrumb ul li::after {
-   content: '';
-   position: absolute;
-   width: .8rem;
-   height: 1.3rem;
-   right: -2rem;
-   top: 0.5rem;
-   background: url(../img/common/arrow-black.svg) 0 0 no-repeat;
-  }
-
-/* ▲▲▲ breadcrumb ▲▲▲ */
-
-/* ▼▼▼ consultation_common ▼▼▼ */
-.consultation_common{
-    background-color: #F5F5F5;
-    padding: 6rem 0;
-}
-.consultation_common .inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.consultation_common p{
-    margin-right: 2rem;
-}
-.consultation_common .btn_pink{
-    margin: 0;
-}
-/* ▲▲▲ consultation_common ▲▲▲ */
-
-  @media (max-width: 767px) {
-    .pc {
-      display: none !important;
-    }
-    .sp {
-        display: block !important;
-      }
-    .inner {
-        max-width: 94%;
-    }
-    /* ▼▼▼ h2ピンクドット用 ▼▼▼ */
-    h2.header-dotted {
-        font-size: 6.66vw;
-    }
-    h2.header-dotted::after {
-        width: 7rem;
-    }
-    .lead {
-        font-size: 4.26vw;
-        line-height: 1.8;
-    }
-    /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
-
-    /* ▼▼▼ ピンクボタン用 ▼▼▼ */
-    .btn_pink{
-        font-size: 4vw;
-        width: 66.68vw;
-        padding: 4.53vw 0;
-    }
-    /* ▲▲▲ ピンクボタン用 ▲▲▲ */
-
-      /* ▼▼▼ headBlock ▼▼▼ */
-    .headBlock {
-        background: url(../img/common/headBlock-bg.gif) 0 0 no-repeat;
-        background-size: cover;
-    }
-    .headBlock h1{
-        font-size: 3rem;
-        padding: 10rem 0 5rem;
-    }
-/* ▲▲▲ headBlock ▲▲▲ */
-
-    /* ▼▼▼ common問合せ用 ▼▼▼ */
-    .contact_common__head {
-      font-size: 2.5rem;
-    }
-    .contact_common {
-        padding: 30px 0;
-        background: url(../img/top/contact-bg-sp.jpg) 0 0/cover no-repeat;
-      }
-      .contact_common__lead {
-        text-align: left;
-        font-size: 1.6rem;
-        line-height: 1.8;
-        margin-bottom: 3rem;
-      }
-      .contact_common__list {
-        display: block;
-      }
-      .contact_common__list__item {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 2rem;
-      }
-      .contact_common__list__item:last-of-type {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0;
-      }
-      .contact_common__list__item--first .tel__number {
-        font-size: 5.33vw;
-      }
-      .contact_common__list__item--first .tel__info {
-        font-size: 3.26vw;
-        font-weight: normal;
-        margin-top: 2vw;
-        display: block;
-      }
-    /* ▲▲▲ common問合せ用 ▲▲▲ */
 
 /* ▼▼▼ breadcrumb ▼▼▼ */
 .breadcrumb {
-    margin-bottom: 5rem;
-  }
+  font-size: 1.4rem;
+  margin-bottom: 8rem;
+}
+.breadcrumb .inner {
+  width: 100%;
+  max-width: none;
+  padding: 0 30px 0 40px;
+}
+.breadcrumb ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.breadcrumb ul li {
+  margin-right: 3.2rem;
+  position: relative;
+}
+.breadcrumb ul li:last-of-type::after {
+  content: none;
+}
+.breadcrumb ul li::after {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 1.3rem;
+  right: -2rem;
+  top: 0.5rem;
+  background: url(../img/common/arrow-black.svg) 0 0 no-repeat;
+}
+
 /* ▲▲▲ breadcrumb ▲▲▲ */
 
 /* ▼▼▼ consultation_common ▼▼▼ */
-.consultation_common{
-    padding: 3rem 0;
+.consultation_common {
+  background-color: #f5f5f5;
+  padding: 6rem 0;
 }
-.consultation_common .inner{
+.consultation_common .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consultation_common p {
+  margin-right: 2rem;
+}
+.consultation_common .btn_pink {
+  margin: 0;
+}
+/* ▲▲▲ consultation_common ▲▲▲ */
+.text p {
+  margin-bottom: 2rem;
+}
+.text p:last-child {
+  margin-bottom: 0;
+}
+.mt20 {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 2.6vw;
+  }
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+  .inner {
+    max-width: 94%;
+  }
+  /* ▼▼▼ h2ピンクドット用 ▼▼▼ */
+  h2.header-dotted {
+    font-size: 6.66vw;
+  }
+  h2.header-dotted::after {
+    width: 7rem;
+  }
+  
+  .lead {
+    font-size: 4.26vw;
+    line-height: 1.8;
+  }
+  /* ▲▲▲ h2ピンクドット用 ▲▲▲ */
+
+  /* ▼▼▼ ピンクボタン用 ▼▼▼ */
+  .btn_pink {
+    font-size: 4vw;
+    width: 66.68vw;
+    padding: 4.53vw 0;
+  }
+  /* ▲▲▲ ピンクボタン用 ▲▲▲ */
+
+  /* ▼▼▼ headBlock ▼▼▼ */
+  .headBlock {
+    background: url(../img/common/headBlock-bg.gif) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .headBlock h1 {
+    font-size: 3rem;
+    padding: 10rem 0 5rem;
+  }
+  /* ▲▲▲ headBlock ▲▲▲ */
+
+  /* ▼▼▼ common問合せ用 ▼▼▼ */
+  .contact_common__head {
+    font-size: 2.5rem;
+  }
+  .contact_common {
+    padding: 30px 0;
+    background: url(../img/top/contact-bg-sp.jpg) 0 0 / cover no-repeat;
+  }
+  .contact_common__lead {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  .contact_common__list {
+    display: block;
+  }
+  .contact_common__list__item {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+  .contact_common__list__item:last-of-type {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  .contact_common__list__item--first .tel__number {
+    font-size: 5.33vw;
+  }
+  .contact_common__list__item--first .tel__info {
+    font-size: 3.26vw;
+    font-weight: normal;
+    margin-top: 2vw;
+    display: block;
+  }
+  /* ▲▲▲ common問合せ用 ▲▲▲ */
+
+  /* ▼▼▼ breadcrumb ▼▼▼ */
+  .breadcrumb .inner{
+    padding:0 0 0 1.5rem;
+  }
+  .breadcrumb {
+    margin-bottom: 5rem;
+  }
+  .breadcrumb ul li::after {
+    content: "";
+    position: absolute;
+    width: 1.7vw;
+    height: 3vw;
+    right: -5.5vw;
+    top: 1.8vw;
+    background: url(../img/common/arrow-black.svg) 0 0 no-repeat;
+    background-size: 1.7vw;
+}
+  /* ▲▲▲ breadcrumb ▲▲▲ */
+
+  /* ▼▼▼ consultation_common ▼▼▼ */
+  .consultation_common {
+    padding: 3rem 0;
+  }
+  .consultation_common .inner {
     display: block;
     text-align: center;
-}
-.consultation_common p{
+  }
+  .consultation_common p {
     margin-bottom: 2rem;
     margin-right: auto;
     font-size: 4.5vw;
-}
-.consultation_common .btn_pink{
-    margin: 0 auto;
-}
-/* ▲▲▲ consultation_common ▲▲▲ */
-
   }
-
+  .consultation_common .btn_pink {
+    margin: 0 auto;
+  }
+  /* ▲▲▲ consultation_common ▲▲▲ */
+}

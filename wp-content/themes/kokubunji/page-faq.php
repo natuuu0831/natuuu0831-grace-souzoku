@@ -16,7 +16,7 @@ Template Name: よくある質問
         <div class="inner">
             <ul>
                 <li>
-                    <a href=""><img src="/assets/img/common/home.svg" alt="ホーム"></a>
+                    <a href="/"><img src="/assets/img/common/home.svg" alt="ホーム"></a>
                 </li>
                 <li>
                     <a href="">よくある質問</a>
@@ -27,7 +27,7 @@ Template Name: よくある質問
 
     <section class="question">
         <div class="inner">
-           <p class="lead">お客様より当事務所によく寄せられるご質問をまとめました。<br>
+           <p class="lead">お客様より当事務所によく寄せられるご質問をまとめました。<br class="pc">
             こちらに無いご質問やご不明な点がございましたら「<a href="#?">お問い合わせフォーム</a>」よりお気軽にお問い合わせください。</p>
             <ul>
             <li>
@@ -146,7 +146,7 @@ Template Name: よくある質問
     <section class="consultation_common">
         <div class="inner">
             <p>当事務所からのお知らせ</p>
-            <a href="" class="btn_pink">お知らせ</a>
+            <a href="/news" class="btn_pink">お知らせ</a>
         </div>
     </section>
 

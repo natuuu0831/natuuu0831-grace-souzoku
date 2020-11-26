@@ -17,9 +17,12 @@ Template Name: 相続-シミュレーター
         <div class="inner">
           <ul>
             <li>
-              <a href=""
+              <a href="/"
                 ><img src="../assets/img/common/home.svg" alt="ホーム"
               /></a>
+            </li>
+            <li>
+              <a href="/souzoku">相続について</a>
             </li>
             <li>
               <a href="" class="disabled">相続税シミュレーター</a>
@@ -181,7 +184,7 @@ Template Name: 相続-シミュレーター
         <div class="inner">
           <p>
             当事務所の分かりやすい料金体系
-            <a href="" class="button">料金</a>
+            <a href="/price" class="button">料金</a>
           </p>
         </div>
       </section>
