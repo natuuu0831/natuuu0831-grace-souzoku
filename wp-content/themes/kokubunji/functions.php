@@ -13,6 +13,8 @@ function register_script()
   wp_register_script('custom', '/assets/js/custom.js');
   wp_register_script('faq', '/assets/js/faq.js');
   wp_register_script('simulator', '/assets/js/simulator.js');
+  wp_register_script('swiper01', '/assets/js/photoswipe.min.js');
+  wp_register_script('swiper02', '/assets/js/photoswipe-ui-default.min.js');
 }
 function add_script()
 {
@@ -21,6 +23,9 @@ function add_script()
 
   if (is_page('faq')) {
     wp_enqueue_script('faq');
+  } elseif (is_page('office')) {
+    wp_enqueue_script('swiper01');
+    wp_enqueue_script('swiper02');
   } else{
     wp_enqueue_script('simulator');
   }
@@ -42,6 +47,8 @@ function register_style()
   wp_register_style('souzoku', '/assets/css/souzoku.css');
   wp_register_style('contact', '/assets/css/contact.css');
   wp_register_style('privacypolicy', '/assets/css/policy.css');
+  wp_register_style('swiper01', '/assets/css/photoswipe.css');
+  wp_register_style('swiper02', '/assets/css/default-skin.css');
 }
 function add_stylesheet()
 {
@@ -58,6 +65,8 @@ wp_enqueue_style('footer');
         wp_enqueue_style('strengths');
     } elseif (is_page('office')) {
         wp_enqueue_style('office');
+        wp_enqueue_style('swiper01');
+        wp_enqueue_style('swiper02');
     } elseif (is_page('staff')) {
         wp_enqueue_style('staff');
     } elseif (is_page('price')) {

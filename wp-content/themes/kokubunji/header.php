@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>国分寺コンシェルジュ</title>
     <meta name="description" content="" />
-    <meta property="og:url" content="https://mishimamura-ferry.com/" />
     <meta property="og:title" content="国分寺コンシェルジュ" />
     <meta property="og:site_name" content="国分寺コンシェルジュ" />
     <meta property="og:image" content="" />
